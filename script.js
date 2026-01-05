@@ -3,11 +3,13 @@ let playercountInput = document.getElementById("player-count");
 let startBtn = document.getElementById("start-button");
 let wordBtn = document.getElementById("word-button");
 let newGameBtn = document.getElementById("new-game-button");
+let mainMenu = document.getElementById("main-menu");
+let chameleonView = document.getElementById("chameleon-view");
 
 
 newGameBtn.addEventListener("click", () => {
-    document.getElementById("main-menu").style.display = "block";
-    document.getElementById("chameleon-view").style.display = "none";
+    mainMenu.style.display = "block";
+    chameleonView.style.display = "none";
 });
 
 startBtn.addEventListener("click", () => {
@@ -28,8 +30,8 @@ let secretWord = "";
 
 function startGame(playerCount) {
     // Hide main menu and show chameleon view
-    document.getElementById("main-menu").style.display = "none";
-    document.getElementById("chameleon-view").style.display = "block";
+    mainMenu.style.display = "none";
+    chameleonView.style.display = "block";
 
     // Select a random secret word from a predefined list
     const words = ["apple", "banana", "cherry", "date", "fig", "grape"];

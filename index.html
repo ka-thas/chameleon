@@ -11,42 +11,37 @@
   <body>
     <main id="main-menu">
       <h1 style="margin-bottom: 20px" class="gradient-text">Chameleon</h1>
+      <div><label for="player-count">Number of Players: </label>
       <input
         type="text"
         id="player-count"
-        placeholder="Number of Players (3-8)"
+        name="player-count"
+        value="3"
       />
+      </div>
       <button id="start-button" class="menu-button">Start Game</button>
-      <div id="rules">
-        <pre>
-🦎 Rules
 
+      <div id="rules">
+        <pre style="white-space: pre-wrap;">
+<h2>🦎 Rules</h2>
 Players: 3–8
 Goal:
 Non-chameleons: find the chameleon
-Chameleon: blend in + guess the secret word
+Chameleon: blend in and guess the secret word
 
-🔁 How to play
+<h3>How to play</h3>
+Go around 1-3 times.
+Each player says one word related to the secret word.
 
-Go around once. Each player says one word related to the secret word.
-Be subtle. Too obvious = suspicious.
-Discuss briefly.
+<h3>Scoring</h3>
 Vote on who you think is the Chameleon.
-
-🗳️ Scoring
-
 Chameleon caught?
 They get one last chance to guess the secret word.
 Correct → Chameleon wins
 Wrong → Others win
-Wrong vote? Chameleon wins immediately
-
-💡 Tips
-
-Don't repeat clues.
-Don't be too specific.
-As Chameleon: stay vague but relevant</pre>
+Wrong vote? Chameleon wins immediately</pre>
       </div>
+
     </main>
 
     <main id="chameleon-view">
