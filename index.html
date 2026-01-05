@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chameleon</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="../seedling.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <main id="main-menu">
+      <h1 style="margin-bottom: 20px" class="gradient-text">Chameleon</h1>
+      <input
+        type="text"
+        id="player-count"
+        placeholder="Number of Players (3-8)"
+      />
+      <button id="start-button" class="menu-button">Start Game</button>
+      <div id="rules">
+        <pre>
+🦎 Rules
+
+Players: 3–8
+Goal:
+Non-chameleons: find the chameleon
+Chameleon: blend in + guess the secret word
+
+🔁 How to play
+
+Go around once. Each player says one word related to the secret word.
+Be subtle. Too obvious = suspicious.
+Discuss briefly.
+Vote on who you think is the Chameleon.
+
+🗳️ Scoring
+
+Chameleon caught?
+They get one last chance to guess the secret word.
+Correct → Chameleon wins
+Wrong → Others win
+Wrong vote? Chameleon wins immediately
+
+💡 Tips
+
+Don't repeat clues.
+Don't be too specific.
+As Chameleon: stay vague but relevant</pre>
+      </div>
+    </main>
+
+    <main id="chameleon-view">
+      <h1 style="font-size: 30px" id="title">Chameleon</h1>
+      <button id="word-button" class="menu-button">Reveal Secret Word</button>
+      <button id="new-game-button" class="menu-button">new game</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
