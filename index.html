@@ -10,10 +10,10 @@
 
   <body>
     <main id="main-menu">
-      <h1 style="margin-bottom: 20px" class="gradient-text">Chameleon</h1>
+      <h1 class="gradient-text">Chameleon</h1>
       <div><label for="player-count">Number of Players: </label>
       <input
-        type="text"
+        type="number"
         id="player-count"
         name="player-count"
         value="3"
@@ -46,6 +46,7 @@ Wrong vote? Chameleon wins immediately</pre>
 
     <main id="chameleon-view">
       <h1 style="font-size: 30px" id="title">Chameleon</h1>
+      <p id="playerIdx">Player </p>
       <button id="word-button" class="menu-button">Reveal Secret Word</button>
       <button id="new-game-button" class="menu-button">new game</button>
     </main>
