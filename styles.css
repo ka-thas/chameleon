@@ -55,13 +55,12 @@ button {
 }
 #word-button {
     padding: 30px;
-    width: 400px;
+    width: 90%;
     height: 200px;
     background-color: #0003;
     color: #cfda5a80;
     border: solid 2px #cfda5a;
     border-radius: 20px;
-    margin: 20px;
 }
 
 #main-menu {
