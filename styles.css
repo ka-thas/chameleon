@@ -47,7 +47,7 @@ button {
     border: none;
     cursor: pointer;
 }
-.menu-button {
+#start-button {
     padding: 9px 15px;
     font-size: 30px;
     border-radius: 100px;
