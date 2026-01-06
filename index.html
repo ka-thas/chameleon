@@ -3,6 +3,11 @@
   <head>
     <title>Chameleon</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="../seedling.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -10,7 +15,7 @@
 
   <body>
     <main id="main-menu">
-      <h1 class="gradient-text">Chameleon</h1>
+      <h1 class="">Chameleon</h1>
       <div><label for="player-count">Number of Players: </label>
       <input
         type="number"
@@ -21,8 +26,10 @@
       </div>
       <button id="start-button" class="menu-button">Start Game</button>
 
+      <div id="collections"></div>
+
       <div id="rules">
-        <pre style="white-space: pre-wrap;">
+        <pre style="white-space: pre-wrap; ">
 <h2>🦎 Rules</h2>
 Players: 3–8
 Goal:
@@ -45,8 +52,8 @@ Wrong vote? Chameleon wins immediately</pre>
     </main>
 
     <main id="chameleon-view">
-      <h1 style="font-size: 30px" id="title">Chameleon</h1>
-      <p id="playerIdx">Player </p>
+      <h1 style="font-size: 30px; margin-bottom: 30px;" id="title">Chameleon</h1>
+      <p id="playerIdx">Player 1</p>
       <button id="word-button" class="menu-button">Reveal Secret Word</button>
       <button id="new-game-button" class="menu-button">new game</button>
     </main>
