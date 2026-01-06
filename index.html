@@ -24,17 +24,15 @@
         value="3"
       />
       </div>
-      <button id="start-button" class="menu-button">Start Game</button>
-
+      
       <div id="collections"></div>
+      <button id="start-button" class="menu-button">Start Game</button>
 
       <div id="rules">
         <pre style="white-space: pre-wrap; ">
 <h2>🦎 Rules</h2>
 Players: 3–8
-Goal:
-Non-chameleons: find the chameleon
-Chameleon: blend in and guess the secret word
+The Chameleon wants to blend in and guess the secret word, while others try to identify them.
 
 <h3>How to play</h3>
 Go around 1-3 times.
@@ -52,10 +50,12 @@ Wrong vote? Chameleon wins immediately</pre>
     </main>
 
     <main id="chameleon-view">
-      <h1 style="font-size: 30px; margin-bottom: 30px;" id="title">Chameleon</h1>
+      <button id="new-game-button" class="menu-button">
+        <h1 style="font-size: 30px;" id="title">Chameleon</h1>
+      </button>
       <p id="playerIdx">Player 1</p>
       <button id="word-button" class="menu-button">Reveal Secret Word</button>
-      <button id="new-game-button" class="menu-button">new game</button>
+      <p>Tap to reveal. Tap again to hide before passing the phone.</p>
     </main>
 
     <script src="script.js"></script>

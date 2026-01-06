@@ -1,177 +1,366 @@
 {
-    "places": {
-        "title": "Places",
-        "words": [
-            "park",
-            "museum",
-            "restaurant",
-            "library",
-            "beach",
-            "mountain",
-            "theater",
-            "stadium",
-            "zoo",
-            "aquarium",
-            "cafe",
-            "mall",
-            "garden",
-            "temple",
-            "castle",
-            "bridge",
-            "island",
-            "harbor",
-            "market",
-            "school"
-        ]
-    },
-    "people": {
-        "title": "People",
-        "words": [
-            "teacher",
-            "doctor",
-            "engineer",
-            "artist",
-            "chef",
-            "musician",
-            "writer",
-            "athlete",
-            "scientist",
-            "nurse",
-            "pilot",
-            "farmer",
-            "lawyer",
-            "dancer",
-            "photographer",
-            "designer",
-            "actor",
-            "firefighter",
-            "police officer",
-            "mechanic"
-        ]
-    },
-    "animals": {
-        "title": "Animals",
-        "words": [
-            "lion",
-            "tiger",
-            "elephant",
-            "giraffe",
-            "zebra",
-            "kangaroo",
-            "panda",
-            "dolphin",
-            "eagle",
-            "wolf",
-            "bear",
-            "fox",
-            "rabbit",
-            "squirrel",
-            "owl",
-            "penguin",
-            "alligator",
-            "hippopotamus",
-            "rhinoceros",
-            "cheetah"
-        ]
-    },
-    "foods": {
-        "title": "Foods",
-        "words": [
-            "pizza",
-            "sushi",
-            "burger",
-            "pasta",
-            "salad",
-            "steak",
-            "taco",
-            "sandwich",
-            "soup",
-            "curry",
-            "noodles",
-            "cake",
-            "ice cream",
-            "bread",
-            "fries",
-            "omelette",
-            "pancakes",
-            "smoothie",
-            "dumplings",
-            "bbq"
-        ]
-    },
-    "vehicles": {
-        "title": "Vehicles",
-        "words": [
-            "car",
-            "bicycle",
-            "motorcycle",
-            "bus",
-            "train",
-            "airplane",
-            "boat",
-            "truck",
-            "scooter",
-            "subway",
-            "helicopter",
-            "tram",
-            "van",
-            "ferry",
-            "taxi",
-            "yacht",
-            "cruise ship",
-            "segway",
-            "hot air balloon",
-            "spaceship"
-        ]
-    },
-    "Rykkinn": {
-        "title": "Rykkinn",
-        "words": [
-            "Rimi",
-            "Kiwi",
-            "Lille Asia",
-            "Narvesen",
-            "SFO",
-            "Busstopp",
-            "Biblioteket",
-            "Posten",
-            "Apoteket",
-            "Pizzabakeren",
-            "Tannlegen",
-            "Klatreparken",
-            "Leos lekeland",
-            "Treningssenteret",
-            "Skolen",
-            "Barnehagen",
-            "Fotballbanen",
-            "Hovedveien",
-            "Parken",
-            "Kirkegården"
-        ]
-    },
-    "IFI": {
-        "title": "IFI",
-        "words": [
-            "Auditorium",
-            "Datamaskinlab",
-            "Bibliotek",
-            "Kantine",
-            "Forelesningssal",
-            "Grupperom",
-            "Professor",
-            "Student",
-            "Eksamen",
-            "Forelesning",
-            "Oppgave",
-            "Prosjekt",
-            "Forskning",
-            "Seminar",
-            "Laboratorium",
-            "IT-tjenester",
-            "Studieveiledning",
-            "Campus",
-            "Bibliotekar",
-            "Kurs"
-        ]
-    }
+  "places": {
+    "title": "Places",
+    "words": [
+      "park",
+      "playground",
+      "street",
+
+      "hospital",
+      "pharmacy",
+      "school",
+      "university",
+      "kindergarten",
+
+      "office",
+      "factory",
+      "warehouse",
+      "laboratory",
+      "studio",
+
+      "forest",
+      "jungle",
+      "field",
+      "lake",
+      "river",
+      "waterfall",
+      "desert",
+      "cave",
+      "volcano",
+
+      "hotel",
+      "hostel",
+      "resort",
+      "motel",
+      "inn",
+
+      "shop",
+      "store",
+      "marketplace",
+      "supermarket",
+      "bakery",
+      "butcher",
+      "bookstore",
+
+      "airport",
+      "station",
+      "terminal",
+      "platform",
+      "garage",
+      "parking",
+
+      "church",
+      "mosque",
+      "synagogue",
+      "shrine",
+      "monastery",
+
+      "house",
+      "apartment",
+      "building",
+      "tower",
+      "skyscraper"
+    ]
+  },
+
+  "people": {
+    "title": "People",
+    "words": [
+      "student",
+      "professor",
+      "researcher",
+      "lecturer",
+        "scientist",
+
+      "surgeon",
+      "dentist",
+      "paramedic",
+      "therapist",
+      "veterinarian",
+
+      "programmer",
+      "developer",
+      "data scientist",
+      "architect",
+      "electrician",
+      "plumber",
+
+      "entrepreneur",
+      "founder",
+      "manager",
+      "consultant",
+      "analyst",
+      "accountant",
+      "economist",
+
+      "journalist",
+      "translator",
+
+      "painter",
+      "sculptor",
+      "director",
+
+      "singer",
+      "composer",
+      "conductor",
+      "dj",
+
+      "coach",
+      "referee",
+      "trainer",
+      "physiotherapist",
+
+      "soldier",
+      "officer",
+      "detective",
+
+      "carpenter",
+      "welder",
+      "craftsperson",
+      "blacksmith",
+
+      "barista",
+      "bartender",
+      "waiter",
+
+      "cashier",
+      "librarian",
+
+      "driver"
+    ]
+  },
+
+
+  "animals": {
+    "title": "Animals",
+    "words": [
+      "dog",
+      "cat",
+      "horse",
+      "cow",
+      "sheep",
+      "goat",
+      "pig",
+
+      "deer",
+      "moose",
+      "bison",
+      "buffalo",
+
+      "leopard",
+      "jaguar",
+      "panther",
+      "lynx",
+      "hyena",
+
+      "monkey",
+      "gorilla",
+      "chimpanzee",
+      "orangutan",
+      "baboon",
+
+      "whale",
+      "shark",
+      "seal",
+      "otter",
+      "walrus",
+
+      "falcon",
+      "hawk",
+      "sparrow",
+      "parrot",
+      "crow",
+
+      "snake",
+      "lizard",
+      "turtle",
+      "frog",
+
+      "ant",
+      "bee",
+      "butterfly",
+      "beetle",
+      "spider"
+    ]
+  },
+  "foods": {
+    "title": "Foods",
+    "words": [
+      "rice",
+      "ramen",
+      "udon",
+      "pho",
+      "risotto",
+
+      "lasagna",
+      "gnocchi",
+      "macaroni",
+
+      "burger",
+      "pizza",
+      "sushi",
+      "pasta",
+      "salad",
+      "steak",
+      "taco",
+      "sandwich",
+      "soup",
+      "curry",
+      "noodles",
+      "cake",
+      "ice cream",
+      "bread",
+      "fries",
+      "omelette",
+      "pancakes",
+      "smoothie",
+      "dumplings",
+      "bbq",
+
+      "hotdog",
+      "sausage",
+      "kebab",
+      "shawarma",
+      "falafel",
+
+      "burrito",
+      "nachos",
+      "quesadilla",
+      "enchilada",
+
+      "samosa",
+      "naan",
+      "roti",
+      "biryani",
+
+      "fish",
+      "chicken",
+      "pork",
+      "lamb",
+      "tofu",
+
+      "cheesecake",
+      "brownie",
+      "donut",
+      "cookie",
+      "pie",
+
+      "yogurt",
+      "granola",
+      "cereal",
+      "oatmeal"
+    ]
+  },
+  "vehicles": {
+    "title": "Vehicles",
+    "words": [
+      "skateboard",
+      "rollerblades",
+      "moped",
+      "pickup",
+      "minivan",
+
+      "bulldozer",
+      "excavator",
+      "forklift",
+      "crane",
+      "tractor",
+
+      "ambulance",
+      "fire truck",
+      "police car",
+      "garbage truck",
+
+      "speedboat",
+      "canoe",
+      "kayak",
+      "submarine",
+
+      "glider",
+      "jet",
+      "fighter jet",
+      "rocket",
+
+      "snowmobile",
+      "sled",
+      "hovercraft",
+
+      "golf cart",
+      "rickshaw",
+      "tuk tuk",
+
+      "tank",
+      "armored vehicle"
+    ]
+  },
+  "Fantasy": {
+    "title": "Fantasy",
+    "words": [
+      "dragon",
+      "unicorn",
+      "wizard",
+      "elf",
+      "dwarf",
+      "orc",
+      "troll",
+      "fairy",
+      "giant",
+      "goblin",
+      "witch",
+      "sorcerer",
+      "phoenix",
+      "griffin",
+      "mermaid",
+      "centaur",
+      "hydra",
+      "minotaur",
+      "vampire",
+      "werewolf",
+      "zombie",
+      "ghost",
+      "skeleton",
+      "golem",
+      "satyr",
+      "chimera",
+      "basilisk",
+      "kraken",
+      "pegasus"
+    ]
+  },
+  "Rykkinn": {
+    "title": "Rykkinn",
+    "words": ["ringen", "ki-senteret", "biblioteket", "bryn kirke", "eineåsen"]
+  },
+  "IFI": {
+    "title": "IFI",
+    "words": [
+      "escape",
+      "gruppetime",
+      "simula",
+      "kattis",
+      "java",
+      "cyb",
+      "robotikk",
+      "maki",
+      "logiske metoder",
+      "mekatronikk",
+      "kalkulus",
+      "simula",
+      "matrise",
+      "liste",
+      "for-løkke",
+      "if-setning",
+      "funksjon",
+      "klasse",
+      "objekt",
+      "arv",
+      "grensesnitt",
+      "kompilator",
+      "debugger",
+      "algoritme",
+      "datastruktur",
+      "binærtre",
+      "kø"
+    ]
+  }
 }
