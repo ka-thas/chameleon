@@ -14,8 +14,10 @@
   </head>
 
   <body>
+    <button id="new-game-button">
+        <h1 id="title">Chameleon</h1>
+      </button>
     <main id="main-menu">
-      <h1 class="">Chameleon</h1>
       <div><label for="player-count">Number of Players: </label>
       <input
         type="number"
@@ -51,11 +53,11 @@ Wrong vote? Chameleon wins immediately</pre>
     </main>
 
     <main id="chameleon-view">
-      <button id="new-game-button">
-        <h1 style="font-size: 30px;" id="title">Chameleon</h1>
-      </button>
+      <div> 
+        <button id="back-button" ></button>
+      </div>
       <p id="playerIdx">Player 1</p>
-      <button id="word-button">Reveal Secret Word</button>
+      <button id="word-button" class="shadow">Reveal Secret Word</button>
       <p style="width: 90%;">Tap to reveal. Tap again to hide before passing the phone.</p>
     </main>
 

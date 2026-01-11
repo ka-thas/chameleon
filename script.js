@@ -1,4 +1,5 @@
 // html elements
+let title = document.getElementById("title");
 let playercountInput = document.getElementById("player-count");
 let startBtn = document.getElementById("start-button");
 let wordBtn = document.getElementById("word-button");
@@ -9,7 +10,7 @@ let playerIdx = document.getElementById("playerIdx");
 
 let secretWord = "";
 let chameleonIndex = -1;
-let wordShown = false;
+let wordShowing = false;
 let playerCount = 0;
 let currentPlayer = 0;
 
@@ -23,8 +24,17 @@ let words = [];
 
 newGameBtn.addEventListener("click", () => {
     // swap views
-    mainMenu.style.display = "flex";
-    chameleonView.style.display = "none";
+    chameleonView.style.opacity = "0";
+    //wait for transition
+    setTimeout(() => {
+        chameleonView.style.display = "none";
+        mainMenu.style.opacity = "0";
+        mainMenu.style.display = "flex";
+        mainMenu.offsetHeight;
+        mainMenu.style.opacity = "1";
+    }, 300);
+    // reset title size
+    title.style.fontSize = "";
     resetGame();
 });
 
@@ -37,8 +47,16 @@ startBtn.addEventListener("click", () => {
     }
 
     // swap views
-    mainMenu.style.display = "none";
-    chameleonView.style.display = "flex";
+    mainMenu.style.opacity = "0";
+        //wait for transition
+    setTimeout(() => {
+        mainMenu.style.display = "none";
+        chameleonView.style.opacity = "0";
+        chameleonView.style.display = "flex";
+          chameleonView.offsetHeight;
+        chameleonView.style.opacity = "1";
+    }, 300);
+    title.style.fontSize = "32px";
     startGame();
     
 });
@@ -46,11 +64,11 @@ startBtn.addEventListener("click", () => {
 function resetGame() {
     secretWord = "";
     chameleonIndex = -1;
-    wordShown = false;
+    wordShowing = false;
     playerCount = 0;
     currentPlayer = 0;
     words = [];
-    playerIdx.textContent = `Player ${currentPlayer + 1}`;
+    playerIdx.textContent = `Player 1`;
     wordBtn.textContent = "Reveal Secret Word";
 }
 
@@ -76,14 +94,16 @@ function startGame() {
 
 // reveal word button
 wordBtn.addEventListener("click", () => {
-    if (wordShown) {
+    if (wordShowing) {
         wordBtn.textContent = "Reveal Secret Word";
-        wordShown = false;
+        wordBtn.style.backgroundColor = "#33e27633";
+        wordShowing = false;
         currentPlayer = (currentPlayer + 1) % playerCount;
         playerIdx.textContent = `Player ${currentPlayer + 1}`;
         return;
     } 
-    wordShown = true;
+    wordShowing = true;
+    wordBtn.style.backgroundColor = "#0003";
     if (currentPlayer === chameleonIndex) {
         wordBtn.textContent = "Chameleon";
     } else {
