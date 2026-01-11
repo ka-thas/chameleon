@@ -34,6 +34,11 @@ h1 {
 p {
     margin:0;
 }
+a {
+    color: #cfda5a;
+    text-decoration: none;
+    font-size: small;
+}
 
 .gradient-text {
     background: linear-gradient(100deg, #00ff80, #efff78);
@@ -50,6 +55,12 @@ button {
     border: none;
     cursor: pointer;
 }
+footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    bottom: 0;
+}
+
 #start-button {
     padding: 9px 15px;
     font-size: 30px;
@@ -129,7 +140,7 @@ button {
 #collections {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px;
+    gap: 12px;
     justify-content: center;
     margin-top: 20px;
 }

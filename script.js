@@ -18,8 +18,18 @@ let currentPlayer = 0;
 let data = {};
 let currentCollections = [];
 let selected = new Set();
+let collectionButtons = [];
 
 let words = [];
+
+// if data in localstorage, load it
+if (localStorage.getItem("playerCount")) {
+    playercountInput.value = localStorage.getItem("playerCount");
+}
+if (localStorage.getItem("selectedCollections")) {
+    const savedCollections = JSON.parse(localStorage.getItem("selectedCollections"));
+    savedCollections.forEach(cat => selected.add(cat));
+}
 
 
 newGameBtn.addEventListener("click", () => {
@@ -39,10 +49,8 @@ newGameBtn.addEventListener("click", () => {
 });
 
 startBtn.addEventListener("click", () => {
-    // 
-    playerCount = parseInt(playercountInput.value);
-    if (isNaN(playerCount) || playerCount < 3) {
-        alert("Please enter a valid number of players (minimum 3).");
+    // read input values and validate
+    if (!readInput()) {
         return;
     }
 
@@ -72,20 +80,30 @@ function resetGame() {
     wordBtn.textContent = "Reveal Secret Word";
 }
 
-function startGame() {
+// reads input values and saves them to localstorage
+function readInput() {
+
+    // read player count
+    playerCount = parseInt(playercountInput.value);
+    if (isNaN(playerCount) || playerCount < 3) {
+        alert("Please enter a valid number of players (minimum 3).");
+        return false;
+    }
+    localStorage.setItem("playerCount", playerCount);
+
     // gather words from selected collections
     selected.forEach(cat => {
-            words = words.concat(data[cat].words);
-        
+            words = words.concat(data[cat].words);    
     });
     if (words.length === 0) {
         alert("Please select at least one word collection.");
-        // return to main menu
-        mainMenu.style.display = "flex";
-        chameleonView.style.display = "none";
-        return;
+        return false;
     }
+    localStorage.setItem("selectedCollections", JSON.stringify(Array.from(selected)));
+    return true;
+}
 
+function startGame() {
     // select secret word and chameleon
     secretWord = words[Math.floor(Math.random() * words.length)];
     chameleonIndex = Math.floor(Math.random() * playerCount);
@@ -112,8 +130,6 @@ wordBtn.addEventListener("click", () => {
 });
 
 // Load collections from data.json
-
-
 async function fetchCollections() {
     const response = await fetch("data.json");
     data = await response.json();
@@ -133,8 +149,9 @@ async function fetchCollections() {
         : selected.delete(cat);
         console.log(selected);
         }
-        button.style.margin = "6px";
+        collectionButtons.push(button);
         collectionsDiv.appendChild(button);
     }
 }
+
 fetchCollections();
