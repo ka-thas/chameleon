@@ -26,15 +26,14 @@ let words = [];
 if (localStorage.getItem("playerCount")) {
     playercountInput.value = localStorage.getItem("playerCount");
 }
-if (localStorage.getItem("selectedCollections")) {
-    const savedCollections = JSON.parse(localStorage.getItem("selectedCollections"));
-    savedCollections.forEach(cat => selected.add(cat));
-}
 
 
 newGameBtn.addEventListener("click", () => {
     // swap views
     chameleonView.style.opacity = "0";
+    newGameBtn.style.opacity = "0";
+    newGameBtn.style.top = "-50px";
+
     //wait for transition
     setTimeout(() => {
         chameleonView.style.display = "none";
@@ -56,7 +55,10 @@ startBtn.addEventListener("click", () => {
 
     // swap views
     mainMenu.style.opacity = "0";
-        //wait for transition
+    newGameBtn.style.opacity = "1";
+    newGameBtn.style.top = "10px";
+
+    //wait for transition
     setTimeout(() => {
         mainMenu.style.display = "none";
         chameleonView.style.opacity = "0";
