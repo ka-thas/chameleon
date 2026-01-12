@@ -61,6 +61,17 @@ footer {
     bottom: 0;
 }
 
+#top-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 #start-button {
     padding: 9px 15px;
     font-size: 30px;
@@ -99,19 +110,17 @@ footer {
     transition: opacity 0.3s ease;
 }
 
-.fade-out {
-    opacity: 0;
-}
-
-.fade-in {
-    opacity: 1;
-}
-
 #new-game-button {
-    background-color: transparent;
-    color: #cfda5a;
+    background-color: #cfda5a;
+    color: #000;
     padding: 0;
-    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease;
 }
 
 #player-count{
@@ -126,10 +135,12 @@ footer {
 }
 
 #rules{
-    background-color: #f1f8f111;
+    background-color: #b3ffb311;
     border-radius: 20px;
     padding: 20px;  
     margin-top: 80px;
+    font-size: medium;
+    text-align: left;
 }
 #rules pre {
     text-align: left;
