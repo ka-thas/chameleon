@@ -78,16 +78,46 @@ footer {
     border-radius: 100px;
     background-color: #cfda5a;
 }
+#playerIdx {
+    font-size: 52px;
+    font-weight: 900;
+    font-family: 'DM Serif Text', serif;
+    color: #cfda5a;
+    text-shadow: 0 2px 20px #00000055;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
 #word-button {
     padding: 30px;
     width: 90%;
     height: 200px;
-    background-color: #33e27633 ;
+    background-color: #33e27633;
     color: #cfda5a80;
     border: solid 2px #cfda5a;
     border-radius: 20px;
-    transition: all 0.2s ease;
+    transition: background-color 0.15s ease, color 0.15s ease, font-size 0.15s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
 
+#word-button.holding {
+    background-color: #111d;
+    color: #cfda5a;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#pass-button {
+    padding: 14px 30px;
+    font-size: 22px;
+    border-radius: 100px;
+    background-color: #cfda5a;
+    color: #000;
+    font-weight: 500;
+    display: none;
+    margin-top: 6px;
 }
 
 .shadow {
