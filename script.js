@@ -41,7 +41,7 @@ newGameBtn.addEventListener("click", () => {
         mainMenu.offsetHeight;
         mainMenu.style.opacity = "1";
     }, 300);
-    title.style.fontSize = "";
+    title.style.opacity = "1";
     resetGame();
 });
 
@@ -59,7 +59,7 @@ startBtn.addEventListener("click", () => {
         chameleonView.offsetHeight;
         chameleonView.style.opacity = "1";
     }, 300);
-    title.style.fontSize = "32px";
+    title.style.opacity = "0";
     startGame();
 });
 
